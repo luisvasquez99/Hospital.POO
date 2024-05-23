@@ -27,7 +27,7 @@ namespace Medicina_Consultorio.Formularios
 
         private void Recetas_Click(object sender, EventArgs e)
         {
-            Categoria form3 = new Categoria();
+            Recetas form3 = new Recetas();
             form3.Show();
             this.Hide();
         }

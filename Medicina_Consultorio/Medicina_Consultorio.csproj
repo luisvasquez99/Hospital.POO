@@ -109,6 +109,9 @@
     <EmbeddedResource Include="Formularios\Categoria.resx">
       <DependentUpon>Categoria.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\Recetas.resx">
+      <DependentUpon>Recetas.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
