@@ -17,7 +17,6 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(citas));
             this.label1 = new System.Windows.Forms.Label();
-            this.txtnombremedico = new System.Windows.Forms.TextBox();
             this.label6 = new System.Windows.Forms.Label();
             this.textrefe = new System.Windows.Forms.TextBox();
             this.label4 = new System.Windows.Forms.Label();
@@ -25,7 +24,6 @@
             this.label3 = new System.Windows.Forms.Label();
             this.txtindicacion = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
-            this.txtclinica = new System.Windows.Forms.TextBox();
             this.label8 = new System.Windows.Forms.Label();
             this.txtrecep = new System.Windows.Forms.TextBox();
             this.label5 = new System.Windows.Forms.Label();
@@ -34,6 +32,8 @@
             this.txtel = new System.Windows.Forms.TextBox();
             this.button1 = new System.Windows.Forms.Button();
             this.btndescargar3 = new System.Windows.Forms.Button();
+            this.comboBoxSucursal = new System.Windows.Forms.ComboBox();
+            this.comboBoxDoctor = new System.Windows.Forms.ComboBox();
             this.SuspendLayout();
             // 
             // label1
@@ -46,14 +46,6 @@
             this.label1.TabIndex = 130;
             this.label1.Text = "Nombre del medico";
             this.label1.Click += new System.EventHandler(this.label1_Click);
-            // 
-            // txtnombremedico
-            // 
-            this.txtnombremedico.Location = new System.Drawing.Point(207, 52);
-            this.txtnombremedico.Margin = new System.Windows.Forms.Padding(4);
-            this.txtnombremedico.Name = "txtnombremedico";
-            this.txtnombremedico.Size = new System.Drawing.Size(167, 22);
-            this.txtnombremedico.TabIndex = 131;
             // 
             // label6
             // 
@@ -116,17 +108,10 @@
             this.label2.Location = new System.Drawing.Point(474, 52);
             this.label2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(130, 16);
+            this.label2.Size = new System.Drawing.Size(57, 16);
             this.label2.TabIndex = 147;
-            this.label2.Text = "Nombre de la clinica";
-            // 
-            // txtclinica
-            // 
-            this.txtclinica.Location = new System.Drawing.Point(620, 52);
-            this.txtclinica.Margin = new System.Windows.Forms.Padding(4);
-            this.txtclinica.Name = "txtclinica";
-            this.txtclinica.Size = new System.Drawing.Size(167, 22);
-            this.txtclinica.TabIndex = 148;
+            this.label2.Text = "sucursal";
+            this.label2.Click += new System.EventHandler(this.label2_Click);
             // 
             // label8
             // 
@@ -208,11 +193,29 @@
             this.btndescargar3.UseVisualStyleBackColor = false;
             this.btndescargar3.Click += new System.EventHandler(this.btndescargar3_Click);
             // 
+            // comboBoxSucursal
+            // 
+            this.comboBoxSucursal.FormattingEnabled = true;
+            this.comboBoxSucursal.Location = new System.Drawing.Point(620, 52);
+            this.comboBoxSucursal.Name = "comboBoxSucursal";
+            this.comboBoxSucursal.Size = new System.Drawing.Size(121, 24);
+            this.comboBoxSucursal.TabIndex = 157;
+            // 
+            // comboBoxDoctor
+            // 
+            this.comboBoxDoctor.FormattingEnabled = true;
+            this.comboBoxDoctor.Location = new System.Drawing.Point(207, 49);
+            this.comboBoxDoctor.Name = "comboBoxDoctor";
+            this.comboBoxDoctor.Size = new System.Drawing.Size(121, 24);
+            this.comboBoxDoctor.TabIndex = 158;
+            // 
             // citas
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.comboBoxDoctor);
+            this.Controls.Add(this.comboBoxSucursal);
             this.Controls.Add(this.btndescargar3);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.txtel);
@@ -221,7 +224,6 @@
             this.Controls.Add(this.label5);
             this.Controls.Add(this.txtrecep);
             this.Controls.Add(this.label8);
-            this.Controls.Add(this.txtclinica);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.txtindicacion);
             this.Controls.Add(this.label3);
@@ -229,7 +231,6 @@
             this.Controls.Add(this.label4);
             this.Controls.Add(this.textrefe);
             this.Controls.Add(this.label6);
-            this.Controls.Add(this.txtnombremedico);
             this.Controls.Add(this.label1);
             this.Name = "citas";
             this.Text = "citas";
@@ -241,7 +242,6 @@
         #endregion
 
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.TextBox txtnombremedico;
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.TextBox textrefe;
         private System.Windows.Forms.Label label4;
@@ -249,7 +249,6 @@
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.TextBox txtindicacion;
         private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.TextBox txtclinica;
         private System.Windows.Forms.Label label8;
         private System.Windows.Forms.TextBox txtrecep;
         private System.Windows.Forms.Label label5;
@@ -258,5 +257,7 @@
         private System.Windows.Forms.TextBox txtel;
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Button btndescargar3;
+        private System.Windows.Forms.ComboBox comboBoxSucursal;
+        private System.Windows.Forms.ComboBox comboBoxDoctor;
     }
 }
